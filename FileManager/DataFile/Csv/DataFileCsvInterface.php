@@ -23,5 +23,5 @@
      * 
      * @return string
      */
-    public function generateLine();
+    //public function generateLine();
   }
