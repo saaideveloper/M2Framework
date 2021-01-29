@@ -1,0 +1,22 @@
+{
+    "name": "saaideveloper/framework",
+    "description": "Simple Class",
+    "keywords": ["CSVs","Class"],
+    "license": "MIT",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Sergio Abad",
+            "email": "saaideveloper@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Saaideveloper\\Framework\\": ""
+        }
+    }
+}
