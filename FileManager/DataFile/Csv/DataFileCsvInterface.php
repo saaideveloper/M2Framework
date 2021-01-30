@@ -24,4 +24,19 @@
      * @return string
      */
     //public function generateLine();
+
+    /**
+     * @TODO : Check Params
+     * 
+     * @see Magento/Framework/Filesystem/IO/File :: streamReadCSV
+     */
+    public function streamReadCSV();
+
+    /**
+     * @TODO : Check Params 
+     * 
+     * @see Magento/Framework/Filesystem/IO/File :: streamWriteCSV
+     */
+    public function streamWriteCSV();
+
   }
