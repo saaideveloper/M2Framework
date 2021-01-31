@@ -27,6 +27,19 @@ class ProductCsv extends AbstractDataFileCsv
         return "Saaideveloper_Framework_Filemanager_DataFile_Csv_Product_ProductCSV::test";
     }
 
+    public function writeCSV(){
+        try {
+            $om = \Magento\Framework\App\ObjectManager::getInstance();
+            $filesystem = $om->get('Magento\Framework\Filesystem');
+            $directoryList = $om->get('Magento\Framework\App\Filesystem\DirectoryList');
+            $media = $filesystem->getDirectoryWrite($directoryList::VAR_DIR);
+            $contents = "ddddddddddddddddddddddddddd";
+            $media->writeFile("module1/sampleeeeeeee.txt",$contents);
+        } catch(Exception $e) {
+            echo $e->getMessage();
+        }
+    }
+
 
     /**
      * Generate Line For Csv
