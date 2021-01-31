@@ -8,9 +8,10 @@ namespace Saaideveloper\Framework\FileManager\DataFile\Csv\Product;
 class SimpleProductCsv extends ProductCsv
 {
     /**
+     * CSV Row product_type
      * @var  string
      */
-    public $_test= 'test';
+    public $_product_type= 'simple';;
 
     public function __construct() {
         //parent::__construct();
