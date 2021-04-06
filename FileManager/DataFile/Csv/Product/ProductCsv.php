@@ -33,7 +33,7 @@ class ProductCsv extends AbstractDataFileCsv
             $filesystem = $om->get('Magento\Framework\Filesystem');
             $directoryList = $om->get('Magento\Framework\App\Filesystem\DirectoryList');
             $media = $filesystem->getDirectoryWrite($directoryList::VAR_DIR);
-            $contents = "ddddddddddddddddddddddddddd";
+            $contents = "Saaideveloper\Framework\FileManager\DataFile\Csv\Product\ProductCsv.php";
             $media->writeFile("module1/sampleeeeeeee.txt",$contents);
         } catch(Exception $e) {
             echo $e->getMessage();
