@@ -1,6 +1,6 @@
 <?php
 
-namespace Boyhagemann\Html;
+namespace Saaideveloper\Framework\Html;
 
 class Attributes
 {

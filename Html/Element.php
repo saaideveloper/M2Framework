@@ -1,6 +1,6 @@
 <?php
 
-namespace Boyhagemann\Html;
+namespace Saaideveloper\Framework\Html;
 
 class Element
 {
@@ -10,12 +10,12 @@ class Element
 	protected $name;
 
 	/**
-	 * @var \Boyhagemann\Html\Element
+	 * @var \Saaideveloper\Framework\Html\Element
 	 */
 	protected $parent;
 
 	/**
-	 * @var \Boyhagemann\Html\Collection|string
+	 * @var \Saaideveloper\Framework\Html\Collection|string
 	 */
 	protected $value;
 
@@ -91,13 +91,13 @@ class Element
 	}
 
 	/**
-	 * @param \Boyhagemann\Html\Collection|string $value
-	 * @return \Boyhagemann\Html\Element
+	 * @param \Saaideveloper\Framework\Html\Collection|string $value
+	 * @return \Saaideveloper\Framework\Html\Element
 	 */
 	public function setValue($value) {
 
 		if(!is_string($value) && !$value instanceof Collection) {
-			throw new \Exception('Can only use a string or \Boyhagemann\Html\Collection as a value');
+			throw new \Exception('Can only use a string or \Saaideveloper\Framework\Html\Collection as a value');
 		}
 
 		if(is_string($value)) {
@@ -123,28 +123,28 @@ class Element
 	public function eachChild($callback)
 	{
 		if(!$this->getValue() instanceof Collection) {
-			throw new \Exception('Can only do an callback on an instance of \Boyhagemann\Html\Collection');
+			throw new \Exception('Can only do an callback on an instance of \Saaideveloper\Framework\Html\Collection');
 		}
 
 		$this->getValue()->each($callback);
 	}
 
 	/**
-	 * @return \Boyhagemann\Html\Collection|string
+	 * @return \Saaideveloper\Framework\Html\Collection|string
 	 */
 	public function getValue() {
 		return $this->value;
 	}
 
 	/**
-	 * @param \Boyhagemann\Html\Element $parent
+	 * @param \Saaideveloper\Framework\Html\Element $parent
 	 */
 	public function setParent(Element $parent) {
 		$this->parent = $parent;
 	}
 
 	/**
-	 * @return \Boyhagemann\Html\Element
+	 * @return \Saaideveloper\Framework\Html\Element
 	 */
 	public function getParent() {
 		return $this->parent;

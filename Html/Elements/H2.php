@@ -1,8 +1,8 @@
 <?php
 
-namespace Boyhagemann\Html\Elements;
+namespace Saaideveloper\Framework\Html\Elements;
 
-use Boyhagemann\Html\Element;
+use Saaideveloper\Framework\Html\Element;
 
 class H2 extends Element
 {
